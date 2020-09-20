@@ -23,9 +23,26 @@
  */
 function range(start, end) {
     // YOUR CODE GOES BELOW HERE //
+
+    /** create empty array to store output
+     test start and end variables for which is greater
+     if start is greater, countdown
+     if start is less, countup
+     return the new array **/    
     
-    
-    
+    var arr = [];
+    if (start >= end){
+        for (var i = start; i >= end; i--){
+            arr.push(i);
+        }
+    }
+    else {
+        for (var i = start; i <= end; i++){
+            arr.push(i);
+        }
+    }
+    return arr;
+        
     
     // YOUR CODE GOES ABOVE HERE //
 }

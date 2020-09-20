@@ -21,7 +21,12 @@
 
 function reverseString(input) {
     // YOUR CODE GOES BELOW HERE //
+    // Given an input of a string, divide the string into an array. collect the new values and return them in reverse order.
+    var firstArr = input.split("");
+    firstArr.reverse();
+    var newArr = firstArr.join("");
     
+    return newArr;
     
     
     

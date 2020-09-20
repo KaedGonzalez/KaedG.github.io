@@ -35,8 +35,22 @@
 
 function greeter(hour) {
     // YOUR CODE BELOW HERE //
-    
-    
+  // using conditional statments, create greetings based on the time of day.
+  if (hour >= 0 && hour <= 11) {            
+      console.log('Good Morning!');         
+  }
+  // 1200 - 1559 - 'Good Afternoon!'
+  else if (hour >= 12 && hour <= 16) {      
+      console.log('Good Afternoon!');
+  }
+  // 1600 - 2059 - 'Good Evening!'
+  else if (hour >= 17 && hour <= 21) {     
+      console.log('Good Evening!');
+  } 
+  // 2100 - 2359 - 'Good Night!'
+  else if (hour >=  22 && hour <= 23) {       
+      console.log('Good Night!');
+  }  
     
     
     // YOUR CODE ABOVE HERE //

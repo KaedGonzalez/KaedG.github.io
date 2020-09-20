@@ -12,7 +12,21 @@
 */
 function fizzBuzz() {
     // YOUR CODE GOES BELOW HERE //
-
+// create a for loop to run from 1 to 100. if divisible by 3 display "Fizz". if divisible by 5, "Buzz". if divisible by 15, "FizzBuzz".
+    for (var i = 1; i <= 100; i++){
+        if (i % 15 === 0){
+            console.log("FizzBuzz");
+        }
+        else if(i % 3 === 0){
+            console.log("Fizz");
+        }
+        else if(i % 5 === 0){
+            console.log("Buzz");
+        }
+        else {
+            console.log(i);
+        }
+    }
 
 
     // YOUR CODE GOES ABOVE HERE //

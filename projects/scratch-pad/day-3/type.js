@@ -14,7 +14,8 @@
  */
 function isArray(value) {
     // YOUR CODE BELOW HERE //
-    
+    // Determine if the value given is an array. return true if it is, false if not.
+    return(Array.isArray(value));
     
     
     
@@ -31,8 +32,8 @@ function isArray(value) {
  */
 function isObject(value) {
     // YOUR CODE BELOW HERE //
-    
-    
+ // the value of each object is storied in the constructor value of the prototype
+    return Object.prototype.toString.call(value) === '[object Object]';
     
     
     // YOUR CODE ABOVE HERE //
@@ -46,7 +47,9 @@ function isObject(value) {
  */
 function isCollection(value) {
     // YOUR CODE BELOW HERE //
-    
+//Compared value to an array or an object, return true if its either.
+
+    return(Object.prototype.toString.call(value) === '[object Array]' || Object.prototype.toString.call(value) === '[object Object]');
     
     
     
@@ -74,6 +77,13 @@ function isCollection(value) {
  */ 
 function typeOf(value) {
     // YOUR CODE BELOW HERE //
+     return Object           // using the Object function and returning the constructor value from the prototype method
+        .prototype
+        .toString
+        .call(value)
+        .split(' ')[1]      // split the value and return the 2 value at index 1
+        .slice(0, -1)       // cutting off the last character of the word at index 1
+        .toLowerCase();     // returning the word in lowercase
     
     
     
