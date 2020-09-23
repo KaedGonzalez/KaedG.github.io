@@ -33,3 +33,38 @@ console.log(myName); // prints => bob
 var myVariable = 1;
 var myVariable = true;
 myVariable = "someString";
+
+/*
+ * DECLARING VARIABLES:
+ * 0. There are three keywords we can use to declare a variable, and each has its different uses.
+ * 1. The 'var' keyword
+ * 
+ * Scope: 'var' is globally scoped when declared outside of a function and locally scoped when declared inside of a function. To be locally scoped means that a variable can only be accessed inside that function.
+ * 
+ * Variables declared with the 'var' keyword can be re-declared and updated.
+ */
+ var num = 10;
+ console.log(num); // prints 10;
+ 
+/* 2. The 'let' keyword
+ * Scope: 'let' is block scoped which includes for/while/if statements. Variables declared with the 'let' keyword can be only be accessed inside of the code block it was declared in.
+ * 
+ * Variables declared with the 'let' keyword cannot be re-declared, but they can be updated.
+ */
+let newWords = 'uppercase';
+for (let i = 0; i < newWords.length - 1; i++) {
+    let upperCaseWord = newWords[i].toUpperCase();
+}
+ 
+/* 3. The 'const' keyword
+ * Scope: 'const' is also block scoped - it can only be accessed inside of the code block it was declared in.
+ * 
+ * Variables declared with the 'const' keyword cannot be re-declared or updated.
+ */
+const favColor = "black";
+
+/* 
+ * HOISTING:
+ *
+ * 0. Hoisting is the default behavior of moving all declarations to the top of the current scope. Variables are able to be declared after they’re assigned.
+ */
