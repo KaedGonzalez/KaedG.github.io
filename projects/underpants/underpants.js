@@ -470,13 +470,8 @@ _.reduce = function(array, func, seed) {
 *   _.extend(data, {a:"two"}); -> data now equals {a:"two"}
 */
 
-_.extend = function(copyToObj, ...copyFrom) {
-    for (let i = 0; i < copyFrom.length; i++) {         // iterate over array of objects passed in
-        for (let keys in copyFrom[i]) {                 // iterate over all key/value pairs in each object
-            copyToObj[keys] = copyFrom[i][keys];        // copy all key/value pairs to first object passed in
-        }
-    }
-    return copyToObj;                                   // return updated object
+_.extend = function(object1, object2){
+    return Object.assign(...arguments);
 };
 
 //////////////////////////////////////////////////////////////////////
