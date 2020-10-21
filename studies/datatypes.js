@@ -145,5 +145,21 @@ console.log(Infinity + -Infinity);    // NaN
  * effect on the copied value.
  * 
  * Passed by reference means that a variable being assigned a complex value 
- * takes on the 'address' of the value. If the value changes, it will update all references to that value. 
- */
+ * takes on the 'address' of the value. If the value changes, it will update all references to that value.
+
+ // example of copy
+let nameLast = 'Klumpp';
+let newLastName = nameLast; // creating a copy of nameLast stored to a new var
+newLastName = 'Tenholder'; // reassigning the variable but won't affect nameLast
+console.log(nameLast); // prints 'Klumpp'
+console.log(newLastName); // prints 'Tenholder'
+
+// example of reference
+let specialNums = [7, 13, 41, 55]; // declaring an array with numbers
+let newNums = specialNums; // creating a reference of the speicalNums array
+newNums.pop(); // removing the last index on newNums
+console.log(`newNums: ${newNums}`); // prints [7, 13, 41];
+console.log(`specialNums: ${specialNums}`); // also prints [7, 13, 41] because it didn't
+// copy it just created a reference.
+
+*/

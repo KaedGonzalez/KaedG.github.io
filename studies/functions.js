@@ -40,7 +40,13 @@
  console.log(firstPart("Heyo", "Jack") + "." +" How're you?");
  //returns "Heyo Jack. How're you?"
  
- 
+ /*
+ * PARAMETERS vs ARGUMENTS:
+ *
+ * Parameters are varaiable names used when defining a function. Arguments are the values that are passed using those variables when 
+ * calling the function.
+ *
+ */
  
  //SPECIFYING INPUTS AND OUTPUTS
  // Functions OPTIONALLY require inputs and OPTIONALLY return something. 
